@@ -1,0 +1,78 @@
+:root {
+  font-family: Arial;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: antiquewhite;
+
+  --blue-color: #0066b2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+button {
+  border: 1px solid #99afc1;
+  border-radius: 3px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--color-gray);
+  color: white;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: black;
+}
+input[type="text"] {
+  border: 1px solid #99afc1;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.4rem;
+  background-color: #ffffff;
+  color: #808080;
+  margin: 0.5rem;
+}
+input[type="text"]:focus {
+  border: 1px solid #808080;
+
+  outline: 0;
+}
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 1px solid #99afc1;
+  border-radius: 3px;
+  padding: 1px 0;
+  background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked:before {
+  background-color: var(--blue-color);
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
