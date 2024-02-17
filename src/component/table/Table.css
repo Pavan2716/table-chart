@@ -1,0 +1,60 @@
+:root {
+  --bo-color-grey-200: #c0c0c0;
+  --bo-color-grey-100: #d3d3d3;
+
+  --bg-color-grey: #f8f8f8;
+  --bg-color-grey-50: #f0f0f0;
+
+  --color-gray: #808080;
+}
+
+.table {
+  border: 1px solid var(--bo-color-grey-200);
+  font-size: 1rem;
+  background-color: var(--bg-color-grey);
+  border-radius: 7px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.table-header {
+  display: grid;
+  column-gap: 2.4rem;
+  align-items: center;
+
+  background-color: var(--bg-color-grey-50);
+  border-bottom: 1px solid var(--bo-color-grey-100);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  color: var(--color-gray);
+  padding: 1rem 1.8rem;
+}
+
+.table-row {
+  display: grid;
+  column-gap: 2.4rem;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  color: var(--color-gray);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--bo-color-grey-100);
+  }
+}
+
+.table-footer {
+  background-color: var(--bg-color-grey-50);
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+  &:not(:has(*)) {
+    display: none;
+  }
+}
+.table-body {
+  background-color: var(--bg-color-grey-50);
+  display: flex;
+  justify-content: center;
+  margin: 0.4rem 0;
+}
