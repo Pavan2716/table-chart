@@ -2,7 +2,7 @@
 import "./Chart.css";
 import Plot from "react-plotly.js";
 
-function Chart({ xData = [], yData = [], lables = [] }) {
+function Chart({ title = "chart", xData = [], yData = [], lables = [] }) {
   return (
     <div className="chart">
       {xData && (
@@ -19,7 +19,7 @@ function Chart({ xData = [], yData = [], lables = [] }) {
           layout={{
             width: 600,
             height: 600,
-            title: "User Age Plot",
+            title: title,
             xaxis: {
               tickangle: 45,
             },
