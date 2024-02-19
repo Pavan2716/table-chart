@@ -8,7 +8,9 @@ function Paging({ currentPage, totalPage, handlePageChange }) {
         <Table.Footer>
           <div>
             {currentPage === 1 ? (
-              <button disabled>❮</button>
+              <button disabled className="btn-disabled">
+                ❮
+              </button>
             ) : (
               <button onClick={() => handlePageChange(-1)}>❮</button>
             )}
